@@ -1,0 +1,33 @@
+{
+  "name": "terminal-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "figlet": "^1.8.0",
+    "inquirer": "^12.4.2"
+  },
+  "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/commander": "^2.12.0",
+    "@types/figlet": "^1.7.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "bin": {
+    "mycli": "./dist/index.js"
+  },
+  "type": "module"
+}
