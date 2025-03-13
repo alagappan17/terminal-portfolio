@@ -221,6 +221,7 @@ const social = () => {
     ${chalk.cyan('Connect with me')}
     ${chalk.gray("Let's stay in touch!")}
     
+    ${chalk.green('GitHub:')} https://github.com/alagappan17
     ${chalk.blue('LinkedIn:')} https://linkedin.com/in/alagappan-n
     ${chalk.gray('Twitter (X):')}  https://x.com/alagappantwt
     ${chalk.cyan('Email:')}    alagappaforwork@gmail.com

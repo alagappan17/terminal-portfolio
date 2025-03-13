@@ -1,16 +1,23 @@
 {
-  "name": "terminal-portfolio",
+  "name": "hey-alagappan",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "An interactive terminal-based portfolio showcasing Alagappan's work and experiences",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "prepublishOnly": "bun run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "portfolio",
+    "terminal",
+    "cli",
+    "interactive",
+    "resume"
+  ],
+  "author": "Alagappan N <alagappaforwork@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^5.4.1",
     "commander": "^13.1.0",
@@ -27,7 +34,14 @@
     "typescript": "^5.8.2"
   },
   "bin": {
-    "mycli": "./dist/index.js"
+    "hey-alagappan": "./dist/index.js"
   },
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alagappan17/terminal-portfolio"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
