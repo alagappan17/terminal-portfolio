@@ -4,7 +4,7 @@ import chalk from 'chalk';
 import inquirer from 'inquirer';
 import figlet from 'figlet';
 
-import { art, experience, projects, connect, about } from './commands';
+import { art, experience, projects, connect, about } from './commands/index.js';
 
 // Display welcome message
 console.log(
