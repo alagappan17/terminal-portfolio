@@ -19,6 +19,7 @@
   "author": "Alagappan N <alagappaforwork@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.8.3",
     "chalk": "^5.4.1",
     "commander": "^13.1.0",
     "figlet": "^1.8.0",
