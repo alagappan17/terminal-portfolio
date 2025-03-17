@@ -11,11 +11,11 @@ export const ask = async (question: string) => {
   }
 
   try {
-    console.log(chalk.cyan('Your question:'), chalk.white(question));
+    console.log(chalk.cyan('You:'), chalk.white(question));
     const response = await client.post('/query', {
       query: question,
     });
-    console.log(chalk.green('Answer:'), chalk.white(response.data.message));
+    console.log(chalk.green('Tess:'), chalk.white(response.data.message));
   } catch (error) {
     console.log(error);
   }
