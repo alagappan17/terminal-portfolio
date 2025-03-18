@@ -13,13 +13,11 @@ import {
   ask,
 } from './commands/index.js';
 
-import { initialize } from './axios';
+import { initialize } from './axios.js';
+import { config } from './config.js';
 
-initialize({
-  api: {
-    url: process.env.API_URL || 'http://localhost:3000',
-  },
-});
+// Initialize with config that was built at build time
+initialize(config);
 
 console.log(
   chalk.green(

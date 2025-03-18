@@ -1,4 +1,5 @@
 import axios, { AxiosError, AxiosInstance, AxiosResponse } from 'axios';
+import { config } from './config.js';
 
 export const client: AxiosInstance = axios.create();
 
@@ -8,7 +9,7 @@ export type AxiosEnv = {
   };
 };
 
-export function initialize(environment: AxiosEnv) {
+export function initialize(environment: AxiosEnv = config) {
   // Configure defaults
   client.defaults.baseURL = environment.api.url;
   client.defaults.headers.common['Content-Type'] = 'application/json';

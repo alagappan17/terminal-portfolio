@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import client from '../axios';
+import client from '../axios.js';
 
 export const ask = async (question: string) => {
   if (!question) {
