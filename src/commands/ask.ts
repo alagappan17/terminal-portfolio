@@ -11,7 +11,7 @@ export const ask = async (question: string) => {
   }
 
   try {
-    console.log(chalk.cyan('You:'), chalk.white(question));
+    console.log(chalk.cyan('\nYou:'), chalk.white(question));
     const response = await client.post('/query', {
       query: question,
     });

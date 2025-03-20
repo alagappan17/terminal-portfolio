@@ -99,10 +99,10 @@ const projectData: Project[] = [
     content: `
     ${chalk.cyan.bold('Overview:')}
     I created an interactive terminal-based portfolio. It allows users to navigate through my professional experiences, projects, and skills directly from the command line.
-    The portfolio also features an AI-powered assistant named Tess, who responds to user queries and provides additional information.
+    The portfolio also features an AI-powered assistant named Tess, who responds to user queries and provides additional information. Use the command 'ask <query>' to interact with her.
 
     ${chalk.magenta.bold('Tech Stack:')} ${chalk.gray(
-      'Node.js, Inquirer, Chalk, Figlet'
+      'Bun, Elysia, Gemini 2.0 Flash, Axios, Inquirer, Chalk, Figlet'
     )}`,
   },
 ];
