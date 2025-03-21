@@ -17,6 +17,10 @@ export const ask = async (question: string) => {
     });
     console.log(chalk.green('Tess:'), chalk.white(response.data.message));
   } catch (error) {
-    console.log(error);
+    console.log(
+      chalk.red(
+        'Error - Unable to connect to the server. Please try again later.'
+      )
+    );
   }
 };

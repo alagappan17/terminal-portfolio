@@ -18,7 +18,7 @@ const projectData: Project[] = [
       'Retrieval-Augmented Generation (RAG)'
     )} and ${chalk.yellow(
       'AI Agents'
-    )} to provide data-driven insights. Through customer discovery interviews,
+    )} to provide data-driven insights. Through multiple customer discovery interviews,
     we have identified key market challenges to shape the product effectively.
     Backed by ${chalk.green(
       "CMU's Project Olympus Program"
@@ -102,7 +102,7 @@ const projectData: Project[] = [
     The portfolio also features an AI-powered assistant named Tess, who responds to user queries and provides additional information. Use the command 'ask <query>' to interact with her.
 
     ${chalk.magenta.bold('Tech Stack:')} ${chalk.gray(
-      'Bun, Elysia, Gemini 2.0 Flash, Axios, Inquirer, Chalk, Figlet'
+      'Bun, Elysia, Gemini, Axios, Langchain, Inquirer, Chalk, Figlet, npm'
     )}`,
   },
 ];

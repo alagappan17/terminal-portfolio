@@ -17,7 +17,7 @@ const workExperience: ExperienceItem[] = [
     duration: 'Nov 2023 - Present',
     location: 'Remote',
     points: [
-      'Building an early literacy app, based on the science of reading. Focused on making a measurable difference in the classroom.',
+      'Building an early literacy app, based on the science of reading. Focused on creating interactive lessons that make a measurable difference in classroom learning.',
     ],
   },
   {
@@ -27,7 +27,7 @@ const workExperience: ExperienceItem[] = [
     location: 'Mumbai, Maharashtra',
     points: [
       'Completed 10-week intensive software engineering boot camp',
-      'Learned various aspects of development like best practices, deployment, estimation, working with teams, influence and networking.',
+      'Learned various aspects of development like programming, software engineering, best practices, deployment and working with teams.',
       'Gained hands-on experience with multiple mini projects',
     ],
   },
@@ -81,7 +81,6 @@ const otherExperience: ExperienceItem[] = [
       'Reached 425k+ organic social media audience through campaigns',
       'Ideated marketing campaigns for OnePlus India and OnePlus SAP',
       'Collaborated with college students to produce digital art content',
-      'Built and managed pan-India student community',
     ],
   },
 ];
