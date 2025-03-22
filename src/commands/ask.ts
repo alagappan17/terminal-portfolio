@@ -11,6 +11,12 @@ export const ask = async (question: string) => {
   }
 
   try {
+    console.log(
+      chalk.blue(
+        '\nNote: Tess is still experimental and might not always give the right answers.'
+      )
+    );
+
     console.log(chalk.cyan('\nYou:'), chalk.white(question));
     console.log(chalk.green('Tess:'), chalk.gray('thinking...'));
     const response = await client.post('/query', {

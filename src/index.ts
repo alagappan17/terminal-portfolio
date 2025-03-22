@@ -55,6 +55,12 @@ console.log(
   )
 );
 
+console.log(
+  chalk.bgCyan(
+    'Tess is still experimental and might not always give the right answers. Please be patient and keep the prompts short but detailed.\n'
+  )
+);
+
 // Start interactive mode
 const startInteractiveMode = async () => {
   let running = true;
