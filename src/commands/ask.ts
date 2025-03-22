@@ -12,9 +12,13 @@ export const ask = async (question: string) => {
 
   try {
     console.log(chalk.cyan('\nYou:'), chalk.white(question));
+    console.log(chalk.green('Tess:'), chalk.gray('thinking...'));
     const response = await client.post('/query', {
       query: question,
     });
+    // Clear the previous line
+    process.stdout.moveCursor(0, -1);
+    process.stdout.clearLine(1);
     console.log(chalk.green('Tess:'), chalk.white(response.data.message));
   } catch (error) {
     console.log(

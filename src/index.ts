@@ -11,6 +11,7 @@ import {
   connect,
   about,
   ask,
+  message,
 } from './commands/index.js';
 
 import { initialize } from './axios.js';
@@ -35,9 +36,24 @@ console.log(
 );
 
 console.log(
-  chalk.magenta(" Use 'ask' to inquire Tess (my AI assistant) about me.")
+  chalk.blue(
+    ` Type ${chalk.yellow.bold('help')} to see all available commands.\n`
+  )
 );
-console.log(chalk.blue(" Type 'help' to see all available commands.\n"));
+
+console.log(
+  chalk.magenta(
+    ` Use ${chalk.yellow.bold(
+      'ask'
+    )} to query Tess (my AI assistant) anything about me, my Spotify activity, GitHub statistics, or even send me a message.\n` +
+      ' Examples:\n' +
+      "   ask what's playing on Spotify now?\n" +
+      '   ask What are your top coding languages?\n' +
+      '   ask Where does he want to travel next?\n' +
+      '   ask Send a message - Who thought it was a good idea to put my stapler in Jello? – Dwight Schrute – dwight@dundermifflin.com\n' +
+      '   ask Give me a dad joke\n'
+  )
+);
 
 // Start interactive mode
 const startInteractiveMode = async () => {
@@ -75,6 +91,9 @@ const startInteractiveMode = async () => {
         const question = command.trim().substring(4).trim();
         await ask(question);
         break;
+      case 'message':
+        await message();
+        break;
       case 'exit':
         running = false;
         exit();
@@ -88,21 +107,25 @@ const startInteractiveMode = async () => {
 
 const help = () => {
   console.log(`
-    ${chalk.yellow('Available Commands:')}
-    - about     ${chalk.gray('Learn more about me')}
-    - projects  ${chalk.gray('View my projects')}
-    - exp       ${chalk.gray('View my work and education history')}
-    - art       ${chalk.gray('View my art profiles')}
-    - connect   ${chalk.gray('Connect with me')}
-    - ask       ${chalk.gray('Ask a question about me to Tess')}
-    - exit      ${chalk.gray('Exit the CLI')}
+  ${chalk.blue(
+    'Use one of the following commands to interact with the console'
+  )}
+  ${chalk.yellow('Available Commands:')}
+  - about       ${chalk.gray('Learn more about me')}
+  - projects    ${chalk.gray('View my projects')}
+  - exp         ${chalk.gray('View my work and education history')}
+  - art         ${chalk.gray('View my art profiles')}
+  - connect     ${chalk.gray('Connect with me')}
+  - ask <query> ${chalk.gray('Ask a question about me to Tess')}
+  - message     ${chalk.gray('Send me a message')}
+  - exit        ${chalk.gray('Exit the CLI')}
 `);
 };
 
 const exit = () => {
   console.log(
     chalk.green(`
-    Goodbye! Thank you for using my CLI!`)
+  Goodbye! Thank you for using my CLI!`)
   );
   connect();
 };

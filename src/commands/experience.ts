@@ -26,9 +26,9 @@ const workExperience: ExperienceItem[] = [
     duration: 'Aug 2023 - Oct 2023',
     location: 'Mumbai, Maharashtra',
     points: [
-      'Completed 10-week intensive software engineering boot camp',
+      'Completed 10-week intensive software engineering boot camp.',
       'Learned various aspects of development like programming, software engineering, best practices, deployment and working with teams.',
-      'Gained hands-on experience with multiple mini projects',
+      'Gained hands-on experience with multiple mini projects.',
     ],
   },
   {
@@ -115,18 +115,18 @@ const experienceDetails = (category: string) => {
 };
 
 const displayExperienceBlock = (exp: ExperienceItem) => {
-  const roleInfo = exp.role ? `\n    ${chalk.gray(exp.role)}` : '';
+  const roleInfo = exp.role ? `\n  ${chalk.gray(exp.role)}` : '';
   const locationInfo = exp.location
     ? ` ${chalk.blue(`(${exp.location})`)}`
     : '';
-  const typeInfo = exp.type ? `\n    ${chalk.blue(`(${exp.type})`)}` : '';
+  const typeInfo = exp.type ? `\n  ${chalk.blue(`(${exp.type})`)}` : '';
 
   return `
-    ${chalk.yellow(exp.company)} (${
+  ${chalk.yellow(exp.company)} (${
     exp.duration
   })${roleInfo}${locationInfo}${typeInfo}
     ${exp.points
       .map((point, index) => (index === 0 ? `• ${point}` : `    • ${point}`))
       .join('\n')}
-`;
+  `;
 };
