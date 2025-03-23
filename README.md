@@ -1,6 +1,6 @@
 # hey-alagappan
 
-An interactive terminal-based portfolio that showcases my work, projects, and experiences through a command-line interface.
+An interactive terminal-based portfolio that showcases my work, projects, and experiences through a command-line interface. It integrates my AI sidekick Tess that can (hopefully) answer questions about me.
 
 ## Installation
 
@@ -16,43 +16,37 @@ After installation, you can start the interactive portfolio by running:
 hey-alagappan
 ```
 
+```bash
+npx hey-alagappan@latest
+bunx hey-alagappan@latest
+```
+
 ### Available Commands
 
 - `about` - Learn more about me
-- `profile` - View profile info
-- `projects` - View a list of projects
-- `art` - View my art profiles
-- `social` - View my social media profiles
+- `projects` - View a list of projects with details
+- `exp` - View my work, education, and other experiences
+- `art` - View my digital art portfolio and client work
+- `connect` - View my social media profiles and contact information
+- `ask <query>` - Ask Tess (AI assistant) anything about me, my Spotify activity, GitHub stats, or send a message
+- `message` - Send me a message directly
 - `help` - Show all available commands
 - `exit` - Exit the CLI
 
+### Ask Command Examples
+
+- `ask what's playing on Spotify now?`
+- `ask What are your top coding languages?`
+- `ask Where does he want to travel next?`
+- `ask Send a message - Who thought it was a good idea to put my stapler in Jello? – Dwight Schrute – dwight@dundermifflin.com`
+- `ask Give me a dad joke`
+
 ## Development
 
-### Environment Setup
-
-The project uses environment variables for configuration. There are two environment files:
-
-- `.env` - Used for local development
-- `.env.production` - Used for production builds
-
-### Available Scripts
-
-- `npm run build` - Build the project for development
-- `npm run build:prod` - Build the project for production using production environment
-- `npm run start` - Start the CLI in development mode
-- `npm run start:prod` - Start the CLI in production mode
-- `npm run publish:npm` - Publish the package to npm (runs build:prod automatically)
-
-## Publishing to npm
-
-To publish a new version to npm:
-
-1. Update the version in `package.json`
-2. Run `npm run publish:npm`
-
-## Requirements
+### Prerequisites
 
 - Node.js >= 16.0.0
+- npm or yarn
 
 ## License
 
@@ -66,3 +60,4 @@ Alagappan N ([@alagappan17](https://github.com/alagappan17))
 
 - Email: alagappaforwork@gmail.com
 - LinkedIn: [alagappan-n](https://linkedin.com/in/alagappan-n)
+- GitHub: [@alagappan17](https://github.com/alagappan17)

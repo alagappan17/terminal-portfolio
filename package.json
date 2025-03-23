@@ -1,6 +1,6 @@
 {
   "name": "hey-alagappan",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "An interactive terminal-based portfolio showcasing Alagappan's work and experiences",
   "main": "dist/index.js",
   "scripts": {
@@ -13,24 +13,19 @@
   },
   "keywords": [
     "portfolio",
-    "terminal",
-    "cli",
     "interactive",
     "resume"
   ],
   "author": "Alagappan N <alagappaforwork@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@pinecone-database/pinecone": "^5.1.1",
     "axios": "^1.8.3",
     "chalk": "^5.4.1",
-    "commander": "^13.1.0",
     "figlet": "^1.8.0",
     "inquirer": "^12.4.2"
   },
   "devDependencies": {
     "@types/chalk": "^0.4.31",
-    "@types/commander": "^2.12.0",
     "@types/figlet": "^1.7.0",
     "@types/inquirer": "^9.0.7",
     "@types/node": "^22.13.10",
